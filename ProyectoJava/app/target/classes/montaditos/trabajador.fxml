@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="montaditos.ControladorTrabajador">
+   <!-- Contenedor principal -->
+   <children>
+      <AnchorPane layoutX="52.0" layoutY="59.0" prefHeight="470.0" prefWidth="653.0">
+         <!-- Aquí colocamos la imagen -->
+         <ImageView fx:id="imageViewImagen" fitHeight="469.0" fitWidth="264.0" layoutX="282.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../img/mn4.jpg" />
+            </image>
+         </ImageView>
+         <!-- Aquí colocamos la TableView de los horarios (inicialmente invisible) -->
+         <TableView fx:id="tableViewHorarios" layoutX="129.0" layoutY="45.0" prefHeight="400.0" prefWidth="500.0" visible="false">
+            <columns>
+               <!-- Columnas de la tabla -->
+               <TableColumn fx:id="colDiaSemana" prefWidth="255.20001792907715" text="Día de la semana" />
+               <TableColumn fx:id="colFranjaHoraria" minWidth="0.0" prefWidth="243.99996948242188" text="Franja horaria" />
+            </columns>
+         </TableView>
+      </AnchorPane>
+      <!-- Botones y otros elementos de la interfaz de usuario -->
+      <Button layoutX="63.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleMostrarHorarios" text="Horario" />
+      <Button layoutX="235.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToPedir" text="Pedir" />
+      <Button layoutX="404.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToCarta" text="Carta" />
+      <Button layoutX="709.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleVolver" text="Cerrar Sesion" />
+      <Button layoutX="574.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToPedidos" text="Pedidos" />
+   </children>
+</AnchorPane>
