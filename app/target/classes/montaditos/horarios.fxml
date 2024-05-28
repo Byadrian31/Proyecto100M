@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="montaditos.ControladorHorarios">
+    <TableView fx:id="tableViewHorarios" layoutX="154.0" layoutY="24.0" prefHeight="400.0" prefWidth="453.0">
+        <columns>
+            <TableColumn fx:id="colId" minWidth="0.0" prefWidth="0.0" text="ID" />
+            <TableColumn fx:id="colDia" prefWidth="215.20001220703125" text="Día" />
+            <TableColumn fx:id="colFranjaHoraria" prefWidth="236.0" text="Franja Horaria" />
+        </columns>
+    </TableView>
+    <Button fx:id="btnAnadir" layoutX="160.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleAnadir" text="Añadir" />
+    <Button fx:id="btnEditar" layoutX="243.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleEditar" text="Editar" />
+   <Button fx:id="btnVolver" layoutX="541.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleVolver" text="Volver" />
+   <Button fx:id="btnBorrar" layoutX="334.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleBorrar" text="Borrar" />
+</AnchorPane>
